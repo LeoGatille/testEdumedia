@@ -15,6 +15,10 @@ class CanvasWindow {
         this.canvas.addEventListener('mousemove', (event) => {
             this.recordMouseMove(event);
         })
+        window.addEventListener('resize', () => {
+            this.canvasPosLeft = this.canvas.offsetLeft + this.canvas.clientLeft;
+            this.canvasPosTop = this.canvas.offsetTop + this.canvas.clientTop;
+        })
         this.createInitialsCircles();
     }
     canvas;
