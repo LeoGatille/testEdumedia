@@ -11,7 +11,6 @@ class ColoredCircle {
             this.posX = Math.floor((this.radius * 2) + Math.random() * ((1024 - (this.radius * 4))));
             this.posY = Math.floor((this.radius * 2) + Math.random() * ((768 - (this.radius * 4))));
         }
-        console.log('coloredCircle => ', this);
         this.createCircle();
     }
     posY;
@@ -37,7 +36,6 @@ class ColoredCircle {
         this.context.stroke();
     }
     move(posX, posY) {
-        console.log('Dragg');
         this.posX = posX;
         this.posY = posY;
         this.createCircle;

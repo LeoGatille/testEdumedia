@@ -87,7 +87,6 @@ class CanvasWindow {
         this.context.textAlign = 'center';
         this.context.fillStyle = text;
         this.context.fillText(text, (this.canvasWidth() / 2), 70);
-        console.log('width => ', this.canvasWidth(), 'height => ', this.canvasHeight());
     }
     clearCanvas() {
         this.context.clearRect(0, 0, 1024, 768);
